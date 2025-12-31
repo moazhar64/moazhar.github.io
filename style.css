@@ -107,33 +107,3 @@ footer {
   font-size: 0.9em;
 }
 
-
-section .hobbies {
-  line-height: 1.8;
-}
-
-section .hobbies .hobby-item {
-  display: block !important;
-  margin-bottom: 14px !important;
-}
-
-section .hobbies .hobby {
-  font-weight: 600;
-  color: #7fb7ff;
-  margin-right: 6px;
-}
-
-section .hobbies .hobby::after {
-  content: ":";
-}
-
-section .hobbies .hobby::before {
-  margin-right: 6px;
-}
-
-section .hobbies .music::before { content: "🎵"; }
-section .hobbies .movies::before { content: "🎬"; }
-section .hobbies .football::before { content: "⚽"; }
-section .hobbies .f1::before { content: "🏎️"; }
-section .hobbies .tennis::before { content: "🎾"; }
-
