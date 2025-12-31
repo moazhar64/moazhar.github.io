@@ -106,3 +106,37 @@ footer {
   margin-top: 40px;
   font-size: 0.9em;
 }
+
+.hobbies {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.hobby {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.hobby::before {
+  margin-right: 6px;
+}
+
+.hobby.music::before {
+  content: "🎵";
+}
+
+.hobby.movies::before {
+  content: "🎬";
+}
+
+.hobby.football::before {
+  content: "⚽";
+}
+
+.hobby.f1::before {
+  content: "🏎️";
+}
+
+.hobby.tennis::before {
+  content: "🎾";
+}
