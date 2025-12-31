@@ -107,7 +107,7 @@ footer {
   font-size: 0.9em;
 }
 
-.hobbies {
+hobbies {
   line-height: 1.8;
   text-align: justify;
 }
@@ -120,23 +120,31 @@ footer {
 .hobby::before {
   margin-right: 6px;
 }
-
-.hobby.music::before {
-  content: "🎵";
+section .hobbies {
+  line-height: 1.8;
 }
 
-.hobby.movies::before {
-  content: "🎬";
+section .hobbies .hobby-item {
+  display: block !important;
+  margin-bottom: 14px !important;
 }
 
-.hobby.football::before {
-  content: "⚽";
+section .hobbies .hobby {
+  font-weight: 600;
+  color: #7fb7ff;
+  margin-right: 6px;
 }
 
-.hobby.f1::before {
-  content: "🏎️";
+section .hobbies .hobby::after {
+  content: ":";
 }
 
-.hobby.tennis::before {
-  content: "🎾";
+section .hobbies .hobby::before {
+  margin-right: 6px;
 }
+
+section .hobbies .music::before { content: "🎵"; }
+section .hobbies .movies::before { content: "🎬"; }
+section .hobbies .football::before { content: "⚽"; }
+section .hobbies .f1::before { content: "🏎️"; }
+section .hobbies .tennis::before { content: "🎾"; }
