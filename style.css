@@ -1,51 +1,108 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
-  background: #f8f9fa;
-  color: #222;
-  line-height: 1.7;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background: #1f2933;
-  color: white;
+  background-color: #ffffff;
   text-align: center;
-  padding: 2.5rem 1rem;
+  padding: 30px 20px;
+  border-bottom: 3px solid #0056b3;
 }
 
-header h1 {
-  margin-bottom: 0.3rem;
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0056b3;
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  font-size: 2.2em;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.contact {
+  margin: 10px 0;
+  font-size: 0.95em;
 }
 
 .contact a {
-  color: #9fd3ff;
+  color: #0056b3;
   text-decoration: none;
+  font-weight: 600;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.resume-btn:hover {
+  background-color: #003f82;
 }
 
 section {
   max-width: 900px;
-  margin: auto;
-  padding: 2rem 1.5rem;
+  margin: 25px auto;
+  padding: 0 20px;
 }
 
 h2 {
+  color: #0056b3;
   border-bottom: 2px solid #ddd;
-  padding-bottom: 0.3rem;
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin-top: 20px;
+  color: #222;
 }
 
 ul {
-  padding-left: 1.2rem;
+  padding-left: 20px;
 }
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background-color: #e9eef4;
+  padding: 6px 10px;
+  border-radius: 4px;
 }
 
 footer {
-  background: #1f2933;
-  color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 15px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  font-size: 0.9em;
 }
