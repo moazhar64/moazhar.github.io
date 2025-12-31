@@ -107,19 +107,7 @@ footer {
   font-size: 0.9em;
 }
 
-hobbies {
-  line-height: 1.8;
-  text-align: justify;
-}
 
-.hobby {
-  font-weight: 600;
-  margin-right: 4px;
-}
-
-.hobby::before {
-  margin-right: 6px;
-}
 section .hobbies {
   line-height: 1.8;
 }
@@ -148,3 +136,4 @@ section .hobbies .movies::before { content: "🎬"; }
 section .hobbies .football::before { content: "⚽"; }
 section .hobbies .f1::before { content: "🏎️"; }
 section .hobbies .tennis::before { content: "🎾"; }
+
