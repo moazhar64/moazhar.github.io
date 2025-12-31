@@ -6,11 +6,11 @@ This repository hosts my personal academic website, built using **HTML and CSS**
 👉 https://moazhar64.github.io/moazhar.github.io/
 
 ## 👤 About
-I am a **Doctoal Research Scholar in Structural Engineering at IIT Mandi**.  
-My research focuses on **microstructurally informed mechanical characterization of foam concrete** using:
+I am a **Doctoal Research Scholar in Structural Engineering at IIT Mandi**. 
+I am interested in Applied Mechanics with  emphasis on  **microstructurally informed mechanical characterization of foam concrete** using:
 - Fabric tensor approaches  
 - X-ray CT and advanced imaging  
-- Computational and finite element modeling  
+- Finite element modeling  
 
 ## 🧰 Technologies Used
 - HTML5
