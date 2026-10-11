@@ -91,7 +91,7 @@ details ul{margin:10px 0 0;padding-left:1.2rem}details li{font-size:1rem}
 .pub p{margin:0 0 12px}
 
 /* hobbies: colored tiles */
-.tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.tiles{grid-auto-flow:dense;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .tile{border-radius:12px;padding:22px;color:#fff;opacity:0;transform:translateX(-26px);transition:opacity .6s,transform .6s;overflow:hidden}
 .tile.in{opacity:1;transform:none}
 .tile .ic{font-size:2.4rem;display:inline-block;line-height:1;margin-bottom:8px}
@@ -101,6 +101,16 @@ details ul{margin:10px 0 0;padding-left:1.2rem}details li{font-size:1rem}
 .t-f1 .ic{transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}.t-f1:not(.in) .ic{transform:translateX(-120px)}
 .tile .chips span{background:#ffffff1f;border-color:#ffffff33}.tile .chips{margin-top:12px}
 
+.tile.wide{grid-column:span 2}
+.tile h4{font:700 .95rem var(--head);margin:18px 0 6px}
+.tile details{background:#00000033;border-color:#ffffff33;color:#fff;margin-top:14px}
+.tile .yrs{list-style:none;padding:0;margin:10px 0 0}.tile .yrs li{margin:6px 0;font-size:.95rem}
+.res{list-style:none;padding:0;margin:0}.res li{display:flex;gap:10px;align-items:center;padding:5px 0;border-bottom:1px solid #ffffff2a;font-size:.95rem}
+.res .b{flex:none;width:24px;height:24px;border-radius:50%;background:#fff;font:800 12px/24px var(--head);text-align:center}
+.res .W{color:#0a7a3b}.res .D{color:#4a5563}.res .L{color:#b00020}
+.res .dt{flex:none;width:52px;opacity:.8}.res .sc{margin-left:auto;font:700 .95rem var(--head)}
+.small{font-size:.85rem;opacity:.85;margin:8px 0 0}
+@media(max-width:620px){.tile.wide{grid-column:auto}}
 .contact{background:var(--ink);color:var(--bg);border-radius:14px;padding:36px;text-align:left}
 .contact h2{all:unset;display:block;font:800 2rem/1.1 var(--head);margin-bottom:8px}
 .contact p{margin:0 0 20px;opacity:.85}
@@ -217,10 +227,33 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
 <section id="hobbies"><div class="wrap sec">
   <h2>Off the clock</h2>
   <div class="tiles">
-    <div class="tile t-lfc"><span class="ic">⚽</span><h3>Football</h3><p>Passionate follower of English football and a lifelong supporter of Liverpool FC, the greatest club in English football history.</p></div>
-    <div class="tile t-f1"><span class="ic">🏎️</span><h3>Formula 1</h3><p>Motorsport enthusiast and a fan of Max Verstappen, the greatest driver of all time.</p></div>
-    <div class="tile t-ten"><span class="ic">🎾</span><h3>Tennis</h3><p>A long-time follower of professional tennis, with Rafael Nadal as my all-time favorite and a strong interest in the Alcaraz–Sinner rivalry.</p></div>
-    <div class="tile t-film"><span class="ic">🎬</span><h3>Film</h3><p>I explore cinema and track what I watch on <a href="https://boxd.it/2wOWH" target="_blank" rel="noopener noreferrer">Letterboxd (@mir_soub)</a>.</p><div class="chips" id="films"></div></div>
+    <div class="tile t-lfc wide"><span class="ic">⚽</span><h3>Liverpool FC</h3><p>Passionate follower of English football and a lifelong supporter of Liverpool FC, the greatest club in English football history. <strong>52 major honours</strong> and counting.</p>
+<div class="chips"><span>20 League titles</span><span>6 European Cups</span><span>8 FA Cups</span><span>10 League Cups</span><span>3 UEFA Cups</span><span>4 Super Cups</span><span>1 Club World Cup</span></div>
+<details><summary>Every major title, by year</summary><ul class="yrs">
+<li><b>League (20):</b> 1900-01, 1905-06, 1921-22, 1922-23, 1946-47, 1963-64, 1965-66, 1972-73, 1975-76, 1976-77, 1978-79, 1979-80, 1981-82, 1982-83, 1983-84, 1985-86, 1987-88, 1989-90, 2019-20, 2024-25</li>
+<li><b>European Cup / Champions League (6):</b> 1977, 1978, 1981, 1984, 2005, 2019</li>
+<li><b>FA Cup (8):</b> 1965, 1974, 1986, 1989, 1992, 2001, 2006, 2022</li>
+<li><b>League Cup (10):</b> 1981, 1982, 1983, 1984, 1995, 2001, 2003, 2012, 2022, 2024</li>
+<li><b>UEFA Cup (3):</b> 1973, 1976, 2001</li>
+<li><b>UEFA Super Cup (4):</b> 1977, 2001, 2005, 2019</li>
+<li><b>FIFA Club World Cup (1):</b> 2019</li></ul></details>
+<h4>Latest result</h4><ul class="res" id="lfc"></ul><p class="small" id="lfcnext"></p></div>
+    <div class="tile t-f1 wide"><span class="ic">🏎️</span><h3>Max Verstappen</h3><p>Motorsport enthusiast and a fan of Max Verstappen, the greatest driver of all time. Four straight world titles with Red Bull.</p>
+<div class="chips"><span>4 World Championships</span><span>71 race wins</span><span>48 pole positions</span></div>
+<details><summary>Championship years</summary><ul class="yrs">
+<li><b>Formula 1 World Drivers' Champion (4):</b> 2021, 2022, 2023, 2024</li>
+<li><b>Career wins and poles</b> are as of the 2026 Spanish Grand Prix.</li></ul></details></div>
+    <div class="tile t-ten wide"><span class="ic">🎾</span><h3>Rafael Nadal</h3><p>A long-time follower of professional tennis, with Rafael Nadal as my all-time favorite. <strong>92 singles titles</strong> across a career that ended in 2024.</p>
+<div class="chips"><span>22 Grand Slams</span><span>14 French Opens</span><span>36 Masters 1000</span><span>2 Olympic golds</span><span>4 Davis Cups</span></div>
+<details><summary>Every major title, by year</summary><ul class="yrs">
+<li><b>French Open (14):</b> 2005, 2006, 2007, 2008, 2010, 2011, 2012, 2013, 2014, 2017, 2018, 2019, 2020, 2022</li>
+<li><b>US Open (4):</b> 2010, 2013, 2017, 2019</li>
+<li><b>Australian Open (2):</b> 2009, 2022</li>
+<li><b>Wimbledon (2):</b> 2008, 2010</li>
+<li><b>Olympics:</b> singles gold 2008 (Beijing), doubles gold 2016 (Rio)</li>
+<li><b>Davis Cup with Spain (4):</b> 2004, 2009, 2011, 2019</li>
+<li><b>Career totals:</b> 92 ATP singles titles including 36 Masters 1000 titles</li></ul></details></div>
+    <div class="tile t-film"><span class="ic">🎬</span><h3>Film</h3><p>I explore cinema and track what I watch on <a href="https://boxd.it/2wOWH" target="_blank" rel="noopener noreferrer">Letterboxd (@mir_soub)</a>.</p><p class="lbl">Favorites</p><div class="chips" id="films"></div><p class="lbl">Recently watched</p><div class="chips" id="recent"></div></div>
     <div class="tile t-mus"><span class="ic">🎧</span><h3>Music</h3><p>I enjoy discovering artists and genres, and finding albums worth returning to. See what I'm listening to on <a href="https://music.apple.com/profile/mirazharudin64" target="_blank" rel="noopener noreferrer">Apple Music</a>.</p><div class="chips" id="music"></div></div>
   </div>
 </div></section>
@@ -236,8 +269,16 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
 <footer><div class="wrap">© 2026 Mohammad Azhar U Din Mir</div></footer>
 
 <script>
-const FILMS=[];  // e.g. ["Film One","Film Two"]
+const FILMS=["Dunkirk (2017)","Naked (1993)","Mirror (1975)","Past Lives (2023)"];  // Letterboxd favorites
+const RECENT=["I Swear (2025)","Hostiles (2017)","Cape Fear (1991)","How to Make a Killing (2026)"];  // recently watched, update occasionally
 const MUSIC=[];  // e.g. ["Album, Artist"]
+const LFC=[ // latest completed match. Update after each game. h/a = home/away team, hs/as = goals
+{d:"20 Sep",h:"Bournemouth",a:"Liverpool",hs:0,as:1}];
+(function(){const ul=document.getElementById('lfc');if(!ul)return;
+LFC.forEach(m=>{const home=m.h==="Liverpool",f=home?m.hs:m.as,g=home?m.as:m.hs,r=f>g?'W':f<g?'L':'D';
+const li=document.createElement('li');
+li.innerHTML='<span class="b '+r+'">'+r+'</span><span class="dt">'+m.d+'</span><span>'+m.h+' v '+m.a+'</span><span class="sc">'+m.hs+'-'+m.as+'</span>';ul.appendChild(li)});
+document.getElementById('lfcnext').textContent="Latest completed Premier League match, as of 11 Oct 2026.";})();
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* F1 progress */
@@ -252,7 +293,8 @@ const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)retur
 (function s(t){const k=reduce?1:Math.min(1,(t-t0)/900);e.target.textContent=Math.round(n*k);if(k<1)requestAnimationFrame(s)})(t0)}),{threshold:.6});
 document.querySelectorAll('[data-n]').forEach(el=>cio.observe(el));
 function chips(id,l){const b=document.getElementById(id);l.forEach(t=>{const s=document.createElement('span');s.textContent=t;b.appendChild(s)})}
-chips('films',FILMS);chips('music',MUSIC);
+chips('films',FILMS);chips('recent',RECENT);chips('music',MUSIC);
+document.querySelectorAll('.lbl').forEach(l=>{l.style.cssText='font:700 .85rem var(--head);margin:14px 0 0;opacity:.8'});
 
 /* hero: drifting pore network, like a CT slice; pores shy away from the cursor */
 (function(){
