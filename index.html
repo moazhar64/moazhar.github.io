@@ -111,6 +111,29 @@ details ul{margin:10px 0 0;padding-left:1.2rem}details li{font-size:1rem}
 .res .dt{flex:none;width:52px;opacity:.8}.res .sc{margin-left:auto;font:700 .95rem var(--head)}
 .small{font-size:.85rem;opacity:.85;margin:8px 0 0}
 @media(max-width:620px){.tile.wide{grid-column:auto}}
+.honors{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.hn{background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:10px;padding:18px}
+.hn .yr{display:inline-block;font:800 .85rem var(--head);color:#fff;background:var(--accent);border-radius:999px;padding:2px 12px;margin-bottom:10px}
+.hn p{margin:6px 0 0;font-size:.98rem;color:var(--mute)}
+.fl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.fl button{font:700 14px var(--head);background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
+.fl button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.certs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.certs li{display:grid;grid-template-columns:84px 1fr auto;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
+.certs li[hidden]{display:none}
+.certs h3{font-size:1.02rem;margin:0}
+.certs p{margin:3px 0 0;font-size:.92rem;color:var(--mute)}
+.certs .dt{font:700 .9rem var(--head);color:var(--accent);padding-top:2px}
+.certs .tg{font:700 12px var(--head);border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--mute)}
+@media(max-width:620px){.certs li{grid-template-columns:1fr;gap:4px}.certs .tg{justify-self:start}}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .55s,transform .55s}.rv.in{opacity:1;transform:none}
+.hn{transition:opacity .55s,transform .55s,box-shadow .2s}.hn:hover{box-shadow:0 8px 24px #00000022}
+.hn .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.hn .em{font-size:2rem;line-height:1}.hn .yr{margin:0}
+.yg{margin-top:6px}.yg h4{font:800 1.3rem var(--head);margin:22px 0 4px;display:flex;align-items:center;gap:12px}
+.yg h4::after{content:"";flex:1;border-top:1px solid var(--line)}
+.fl .n{opacity:.7;margin-left:6px;font-weight:600}
+#top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:35;width:44px;height:44px;border-radius:50%;border:0;background:var(--accent);color:#fff;font:800 20px var(--head);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:0 4px 14px #0004}
+#top.show{opacity:1;pointer-events:auto}
 .contact{background:var(--ink);color:var(--bg);border-radius:14px;padding:36px;text-align:left}
 .contact h2{all:unset;display:block;font:800 2rem/1.1 var(--head);margin-bottom:8px}
 .contact p{margin:0 0 20px;opacity:.85}
@@ -119,7 +142,7 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
 
 @media(max-width:760px){.hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:56px;padding-bottom:64px}.hero .ph{width:150px;height:150px;order:-1}
 .sec{grid-template-columns:1fr;gap:18px}.sec>h2{position:static}.focus div{grid-template-columns:1fr;gap:4px}section{padding:44px 0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile,.step,.t-f1 .ic{transition:none;opacity:1;transform:none}.btn{transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{transition:none;opacity:1;transform:none}.tile,.step,.t-f1 .ic{transition:none;opacity:1;transform:none}.btn{transition:none}}
 </style>
 </head>
 <body>
@@ -148,7 +171,7 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
 </div>
 
 <nav aria-label="Sections"><div class="wrap">
-  <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#hobbies">Hobbies</a><a href="#contact">Contact</a>
+  <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#honors">Honors</a><a href="#hobbies">Hobbies</a><a href="#contact">Contact</a>
   <button id="theme" type="button" aria-label="Toggle dark mode">Dark mode</button>
 </div></nav>
 
@@ -163,6 +186,7 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
       <div class="stat"><b data-n="2">0</b><span>publications</span></div>
       <div class="stat"><b data-n="10">0</b><span>PhD courses completed</span></div>
       <div class="stat"><b data-n="2">0</b><span>courses assisted as TA</span></div>
+      <div class="stat"><b data-n="11">0</b><span>honors and certificates</span></div>
     </div>
   </div>
 </div></section>
@@ -211,7 +235,6 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
     <div class="chips" style="margin-top:8px"><span>Python</span><span>MATLAB</span><span>Fortran</span><span>ABAQUS</span><span>LaTeX</span><span>AutoCAD</span><span>MS Office</span></div>
     <details><summary>PhD coursework (10 courses)</summary><ul>
       <li>Uncertainty Analysis in Civil Engineering (CE-516)</li><li>Fundamentals of Fracture Mechanics (ME-506)</li><li>High-Performance Scientific Computing (ME-522)</li><li>Mechanics of Composite Materials (CE-617)</li><li>Solid Mechanics in Structural Engineering (CE-557)</li><li>Numerical Methods for Engineering Computation (ME-504)</li><li>Applied Computational Fluid Dynamics (ME-615)</li><li>Research Methodology for Civil Engineering (CE-600*)</li><li>Selected Topics in Plasticity and Damage Mechanics (ME-591)</li><li>Consciousness and Professional Ethics (GE-502)</li></ul></details>
-    <details><summary>Honors</summary><ul><li>GATE 2023, qualified (Civil Engineering)</li><li>Innovative Project Award, AICONATHON 2021, VIT Chennai</li></ul></details>
   </div>
 </div></section>
 
@@ -221,6 +244,30 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
     <div class="pub"><p>Sahil, Mohammad Azhar U. Din Mir, Rajneesh Sharma, Sunny Zafar (2026). <em>Hydrothermal Durability of Microwave-Processed Seashell-Filled GFRP Composites: Diffusion, Microstructure, and Mechanical Performance.</em> Polymer Composites.</p>
       <a class="btn sm" href="https://doi.org/10.1002/pc.71471" target="_blank" rel="noopener">View paper (DOI)</a></div>
     <div class="pub"><p>Mohammad Azhar U Din Mir, Rajneesh Sharma (2025). <em>Microstructurally informed mechanical characterization of foam concrete using fabric tensor approach.</em> ICCMS 2025, IIT Bhubaneswar.</p></div>
+  </div>
+</div></section>
+
+<section id="honors"><div class="wrap sec">
+  <h2>Honors and certificates</h2>
+  <div>
+    <div class="honors">
+      <div class="hn rv"><div class="top"><span class="em">🏅</span><span class="yr">2023</span></div><h3>GATE 2023: Qualified</h3><p>Graduate Aptitude Test in Engineering, Civil Engineering.</p></div>
+      <div class="hn rv"><div class="top"><span class="em">🏆</span><span class="yr">2021</span></div><h3>Innovative Project Award, AICONATHON 2021</h3><p>For <em>Development of Interactive Tool for Design of Steel Structures</em>, School of Civil Engineering, VIT Chennai (7–8 May 2021). Prize: INR 5000 and server hosting support from the industry partner.</p></div>
+      <div class="hn rv"><div class="top"><span class="em">🤝</span><span class="yr">2019–20</span></div><h3>Certificate of Appreciation, Enactus VIT Chennai</h3><p>For outstanding contribution to the student chapter as HR, February 2019 to April 2020.</p></div>
+    </div>
+    <h3 style="margin:34px 0 10px">Certificates</h3>
+    <div class="fl" id="fl" role="group" aria-label="Filter certificates"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="Workshop">Workshops</button><button type="button" data-f="Webinar">Webinars</button><button type="button" data-f="Conference">Conferences</button><button type="button" data-f="Training">Training</button></div>
+    <div id="certs"><div class="yg rv"><h4>2026</h4><ul class="certs">
+<li data-t="Workshop"><span class="dt">Oct 2026</span><div><h3>be10X AI Tools &amp; Claude Workshop</h3><p>Certificate of completion · be10X</p></div><span class="tg">Workshop</span></li>
+<li data-t="Webinar"><span class="dt">Jul 2026</span><div><h3>Computational Structural Engineering with MATLAB: Modelling, Analysis, and Automation</h3><p>Webinar, 25 Jul 2026 · IAStructE Student Chapter, BITS Pilani Hyderabad Campus</p></div><span class="tg">Webinar</span></li>
+</ul></div><div class="yg rv"><h4>2020</h4><ul class="certs">
+<li data-t="Conference"><span class="dt">Dec 2020</span><div><h3>Virtual Industry Conclave</h3><p>18 Dec 2020 · School of Civil Engineering, VIT Chennai</p></div><span class="tg">Conference</span></li>
+<li data-t="Conference"><span class="dt">Nov 2020</span><div><h3>Virtual International Summit on Energy Efficient Buildings</h3><p>21 Nov 2020 · School of Civil Engineering, VIT Chennai</p></div><span class="tg">Conference</span></li>
+<li data-t="Training"><span class="dt">Sep 2020</span><div><h3>Short Term Training Program: Challenges and Remedies in Various Fields of Civil Engineering Construction</h3><p>21–26 Sep 2020 · School of Civil Engineering, VIT Chennai</p></div><span class="tg">Training</span></li>
+<li data-t="Webinar"><span class="dt">Sep 2020</span><div><h3>Webinar: Entrepreneurship Opportunities for Civil Engineers</h3><p>10 Sep 2020 · by Er. Francis Suresh Balan (CGS Green Sustainergy). Part of the International Webinar Series on Significance and Prospects of Civil Engineering, VIT Chennai</p></div><span class="tg">Webinar</span></li>
+<li data-t="Webinar"><span class="dt">Jul 2020</span><div><h3>Four-day webinar series: Modern Approaches to Bridge Engineering</h3><p>1–4 Jul 2020 · VIT Chennai</p></div><span class="tg">Webinar</span></li>
+<li data-t="Training"><span class="dt">Jun 2020</span><div><h3>Entrepreneurship Development Program on Modern Construction Project Management</h3><p>28–30 Jun 2020 · VIT Chennai</p></div><span class="tg">Training</span></li>
+</ul></div></div>
   </div>
 </div></section>
 
@@ -266,6 +313,7 @@ footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
   </div>
 </div></section>
 </main>
+<button id="top" type="button" aria-label="Back to top">↑</button>
 <footer><div class="wrap">© 2026 Mohammad Azhar U Din Mir</div></footer>
 
 <script>
@@ -289,7 +337,7 @@ addEventListener('scroll',progress,{passive:true});addEventListener('resize',pro
 
 /* reveals */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.25});
-document.querySelectorAll('.tile,.step').forEach((el,i)=>{el.style.transitionDelay=((i%5)*90)+'ms';io.observe(el)});
+document.querySelectorAll('.tile,.step,.rv').forEach((el,i)=>{el.style.transitionDelay=((i%5)*90)+'ms';io.observe(el)});
 const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);const n=+e.target.dataset.n,t0=performance.now();
 (function s(t){const k=reduce?1:Math.min(1,(t-t0)/900);e.target.textContent=Math.round(n*k);if(k<1)requestAnimationFrame(s)})(t0)}),{threshold:.6});
 document.querySelectorAll('[data-n]').forEach(el=>cio.observe(el));
@@ -344,6 +392,20 @@ J('https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id=133602').then(d=>
     if(!t.length)return;
     refill('vchips',[t.length+' World Championships',w.MRData.total+' race wins',p.MRData.total+' pole positions']);
     document.getElementById('vtitles').innerHTML="<b>Formula 1 World Drivers' Champion ("+t.length+"):</b> "+t.join(', ')}).catch(()=>{})})();
+
+/* certificate filter */
+const cl=[...document.querySelectorAll('#certs li')];
+document.querySelectorAll('#fl button').forEach(b=>{
+  const f=b.dataset.f,c=f==='all'?cl.length:cl.filter(l=>l.dataset.t===f).length;
+  b.insertAdjacentHTML('beforeend','<span class="n">'+c+'</span>');
+  b.onclick=()=>{
+    document.querySelectorAll('#fl button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+    cl.forEach(li=>li.hidden=f!=='all'&&li.dataset.t!==f);
+    document.querySelectorAll('.yg').forEach(g=>g.hidden=![...g.querySelectorAll('li')].some(li=>!li.hidden))}});
+/* back to top */
+const topb=document.getElementById('top');
+addEventListener('scroll',()=>topb.classList.toggle('show',scrollY>700),{passive:true});
+topb.onclick=()=>scrollTo({top:0});
 
 /* nav highlight */
 const links=[...document.querySelectorAll('nav a')];
