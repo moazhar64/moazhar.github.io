@@ -4,442 +4,199 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mohammad Azhar U Din Mir | PhD Scholar, IIT Mandi</title>
-<meta name="description" content="Doctoral research scholar in structural engineering at IIT Mandi, working on microstructure-informed modeling of porous materials.">
+<meta name="description" content="Structural engineer and doctoral scholar at IIT Mandi studying how the internal structure of porous materials shapes their mechanical behavior.">
 <meta property="og:title" content="Mohammad Azhar U Din Mir | PhD Scholar, IIT Mandi">
-<meta property="og:description" content="Microstructure-informed mechanics of porous materials: X-ray CT, constitutive modeling, finite element analysis.">
+<meta property="og:description" content="Microstructure-informed mechanics of porous materials.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏎️%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Mono:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mohammad Azhar U Din Mir","jobTitle":"Doctoral Research Scholar","affiliation":{"@type":"CollegeOrUniversity","name":"Indian Institute of Technology Mandi"},"sameAs":["https://www.linkedin.com/in/mir-azhar-u-din-59765a240"]}</script>
 <style>
-:root{--bg:#eef1f4;--panel:#fff;--ink:#101b2a;--mute:#546275;--line:#d5dce4;--accent:#c8102e;--track:#0a1018;
---on-accent:#fff;--hero:#0d1520;--head:'Archivo',system-ui,sans-serif;--body:'Source Serif 4',Georgia,serif;padding-top:env(safe-area-inset-top,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c131c;--panel:#152030;--ink:#e8edf3;--mute:#9aa9ba;--line:#26344a;--accent:#ff4d63}}
-:root[data-theme="dark"]{--bg:#0c131c;--panel:#152030;--ink:#e8edf3;--mute:#9aa9ba;--line:#26344a;--accent:#ff4d63}
+:root{--bg:#fbfbfa;--ink:#16181d;--mute:#5d646e;--line:#dedfe2;--accent:#c8102e;--on:#fff;--track:#0a1018;
+--serif:'Source Serif 4',Georgia,serif;--mono:'IBM Plex Mono',ui-monospace,monospace;padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1116;--ink:#eceef1;--mute:#9aa1ab;--line:#262b34;--accent:#ff5068}}
+:root[data-theme="dark"]{--bg:#0e1116;--ink:#eceef1;--mute:#9aa1ab;--line:#262b34;--accent:#ff5068}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{margin:0;background:var(--bg);color:var(--ink);font:18px/1.7 var(--body)}
-a{color:var(--accent)}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.7 var(--serif)}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .skip{position:absolute;left:-999px;top:40px;background:#fff;color:#000;padding:8px 12px;z-index:50}.skip:focus{left:8px}
-.wrap{max-width:1040px;margin:auto;padding:0 24px}
+.col{max-width:740px;margin:auto;padding:0 24px}
+.mono{font:500 .78rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
 
-/* F1 track */
-#track{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:30px;background:var(--track);z-index:40;overflow:hidden;border-bottom:1px solid #ffffff1a}
-#track::before{content:"";position:absolute;left:0;right:34px;top:14px;border-top:2px dashed #ffffff44}
+#track{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;height:26px;background:var(--track);z-index:40;overflow:hidden}
+#track::before{content:"";position:absolute;left:0;right:30px;top:12px;border-top:2px dashed #ffffff44}
 #fill{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,transparent,#c8102e77)}
-#finish{position:absolute;right:0;top:0;bottom:0;width:34px;background:repeating-conic-gradient(#fff 0 25%,#111 0 50%) 0 0/10px 10px}
-#car{position:absolute;top:3px;left:0;width:48px;height:24px;will-change:transform}
+#finish{position:absolute;right:0;top:0;bottom:0;width:30px;background:repeating-conic-gradient(#fff 0 25%,#111 0 50%) 0 0/9px 9px}
+#car{position:absolute;top:2px;left:0;width:44px;height:22px;will-change:transform}
 
-/* hero */
-.hero{position:relative;background:var(--hero);color:#eef2f6;margin-top:30px;overflow:hidden}
-#pores{position:absolute;inset:0;width:100%;height:100%}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:center;padding-top:88px;padding-bottom:96px}
-.hero h1{font:800 clamp(2.6rem,8vw,5.4rem)/.95 var(--head);letter-spacing:-.04em;margin:0 0 18px}
-.hero .role{font:600 1.2rem var(--head);color:#b9c6d4;margin:0 0 16px}
-.hero .tag{max-width:50ch;color:#cfd8e2;margin:0 0 28px;font-size:1.12rem}
-.hero .ph{width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);background:#1b2838;box-shadow:0 0 0 10px #ffffff0d}
-.btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn{display:inline-block;background:var(--accent);color:var(--on-accent);text-decoration:none;font:700 15px var(--head);padding:11px 20px;border-radius:6px;border:2px solid var(--accent);transition:transform .15s}
-.btn:hover{transform:translateY(-2px)}
-.btn.alt{background:transparent;border-color:#ffffff40;color:#fff}
-.btn.sm{padding:6px 14px;font-size:14px}
-.loc{font-size:.95rem;color:#93a3b5;margin:20px 0 0}
+nav{position:sticky;top:calc(26px + env(safe-area-inset-top,0px));z-index:30;margin-top:26px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px)}
+nav .col{display:flex;gap:4px 20px;align-items:center;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+nav a{text-decoration:none;font:500 .8rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--mute);padding:2px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.on{color:var(--ink);border-color:var(--accent)}
+#theme{margin-left:auto;background:none;border:1px solid var(--line);color:var(--mute);border-radius:999px;padding:3px 12px;font:500 .78rem var(--mono);cursor:pointer}
 
-nav{position:sticky;top:calc(30px + env(safe-area-inset-top,0px));z-index:30;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;gap:2px 22px;align-items:center;padding-top:9px;padding-bottom:9px;flex-wrap:wrap;font:600 15px var(--head)}
-nav a{color:var(--ink);text-decoration:none;padding:3px 0;border-bottom:2px solid transparent}
-nav a:hover,nav a.on{border-color:var(--accent)}
-#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:4px 14px;font:600 14px var(--head);cursor:pointer}
+.hero{padding:56px 0 72px}
+.hero .wrapper{display:grid;grid-template-columns:1fr 150px;gap:36px;align-items:start}
+h1{font:600 clamp(2.6rem,9vw,4.6rem)/1 var(--serif);letter-spacing:-.035em;margin:12px 0 18px}
+.role{font:500 .95rem var(--mono);color:var(--mute);margin:0 0 28px}
+.story{font-size:1.28rem;line-height:1.6;margin:0 0 28px}
+.story b{font-weight:600;background:linear-gradient(transparent 62%,color-mix(in srgb,var(--accent) 28%,transparent) 0)}
+.links{display:flex;gap:10px 22px;flex-wrap:wrap;font:500 .85rem var(--mono)}
+.links a{color:var(--ink)}
+.postcard{width:150px;background:#fff;padding:8px 8px 22px;box-shadow:0 6px 22px #0003;transform:rotate(3deg);transition:transform .3s;border-radius:2px}
+.postcard:hover{transform:rotate(0)}
+.postcard img{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#cfd3d8}
 
-/* sections: sticky label + content */
-section{padding:64px 0;border-bottom:1px solid var(--line)}
-.sec{display:grid;grid-template-columns:200px 1fr;gap:40px}
-.sec>h2{font:800 1.9rem/1.1 var(--head);letter-spacing:-.02em;margin:0;position:sticky;top:110px;align-self:start}
-h3{font:700 1.12rem/1.3 var(--head);margin:0 0 4px}
-.max{max-width:66ch;margin-top:0}
-.meta{color:var(--mute);font-size:.95rem;margin:0}
-.lede{font-size:1.2rem;max-width:58ch;margin:0 0 28px}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.col>h2{font:500 .78rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:0 0 26px}
+.sub{color:var(--mute);margin:0 0 20px;font-size:1rem}
 
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0;margin-top:30px;border-top:2px solid var(--ink)}
-.stat{padding:16px 14px 0 0}
-.stat b{display:block;font:800 2.8rem/1 var(--head);color:var(--accent)}
-.stat span{font-size:.9rem;color:var(--mute);display:block;margin-top:4px}
+/* rows */
+.rows{border-top:1px solid var(--line)}
+details.row{border-bottom:1px solid var(--line)}
+details.row>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto 26px;gap:14px;align-items:baseline;padding:16px 0}
+details.row>summary::-webkit-details-marker{display:none}
+details.row>summary h3{font:600 1.15rem/1.35 var(--serif);margin:0}
+details.row>summary .t{font:500 .75rem var(--mono);color:var(--mute);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+details.row>summary::after{content:"+";font:500 1.3rem var(--mono);color:var(--accent);text-align:right;transition:transform .2s}
+details.row[open]>summary::after{transform:rotate(45deg)}
+details.row>summary:hover h3{color:var(--accent)}
+.body{padding:0 0 22px;color:var(--mute);font-size:1.02rem;max-width:62ch}
+.body p{margin:0 0 10px}
+.body ul{margin:6px 0 10px;padding-left:1.1rem}.body li{margin:3px 0}
+.body a{color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.chips span{font:500 .78rem var(--mono);border:1px solid var(--line);border-radius:999px;padding:3px 12px;color:var(--ink)}
+.res{font:500 .85rem var(--mono);color:var(--ink);margin:10px 0 0}
+.res .b{display:inline-block;width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px;margin-right:8px;font-weight:700;color:#fff}
+.res .W{background:#0a7a3b}.res .D{background:#59626f}.res .L{background:#b00020}
+.small{font-size:.85rem;margin-top:8px}
 
-.focus{border-top:1px solid var(--line)}
-.focus div{padding:16px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:240px 1fr;gap:20px}
-.focus p{margin:0;color:var(--mute)}
+.lrow{display:grid;grid-template-columns:1fr auto;gap:2px 14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.lrow h3{font:600 1.15rem/1.35 var(--serif);margin:0}
+.lrow .t{font:500 .75rem var(--mono);color:var(--mute);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.lrow p{grid-column:1/-1;margin:4px 0 0;color:var(--mute);font-size:1rem}
+.exp{display:grid;grid-template-columns:110px 1fr;gap:6px 20px;padding:12px 0;border-bottom:1px solid var(--line)}
+.exp:first-of-type{border-top:1px solid var(--line)}
+.exp .y{font:500 .8rem var(--mono);color:var(--mute);padding-top:5px}
+.exp h3{font:600 1.05rem/1.4 var(--serif);margin:0}
+.exp p{margin:2px 0 0;color:var(--mute);font-size:.98rem}
+.pick{margin:22px 0 0;font-size:1rem;color:var(--mute)}
 
-.flow{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));counter-reset:s;margin-top:14px;position:relative}
-.step{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px 18px;opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s;position:relative}
-.step.in{opacity:1;transform:none}
-.step::before{counter-increment:s;content:counter(s);font:800 .95rem var(--head);color:var(--on-accent);background:var(--accent);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;margin-bottom:10px}
-.step p{margin:6px 0 0;font-size:.96rem;color:var(--mute)}
+.honor{display:grid;grid-template-columns:70px 1fr;gap:6px 20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.honor:first-of-type{border-top:1px solid var(--line)}
+.honor .y{font:700 .85rem var(--mono);color:var(--accent);padding-top:4px}
+.honor h3{font:600 1.08rem/1.4 var(--serif);margin:0}.honor p{margin:3px 0 0;color:var(--mute);font-size:.98rem}
+.certs{list-style:none;margin:0;padding:0}
+.certs li{display:grid;grid-template-columns:78px 1fr;gap:4px 16px;padding:9px 0;border-bottom:1px dashed var(--line);font-size:.98rem}
+.certs .d{font:500 .78rem var(--mono);color:var(--mute);padding-top:4px}.certs small{display:block;color:var(--mute);font-size:.85rem}
 
-.tl{border-left:3px solid var(--line);margin-left:6px;padding-left:26px}
-.job{position:relative;margin-bottom:32px}
-.job::before{content:"";position:absolute;left:-36px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
-.job ul{margin:8px 0 0;padding-left:1.1rem}.job li{margin:3px 0;font-size:1rem}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips span{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 14px;font:600 14px var(--head)}
-details{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 18px;margin-top:14px}
-summary{font:700 1rem var(--head);cursor:pointer}
-details ul{margin:10px 0 0;padding-left:1.2rem}details li{font-size:1rem}
+section>.col.contact>h2{font:600 clamp(1.8rem,5vw,2.6rem)/1.15 var(--serif);letter-spacing:-.02em;color:var(--ink);text-transform:none;font-family:var(--serif);margin:0 0 14px}
+footer{padding:36px 0 64px;color:var(--mute);font:500 .78rem var(--mono)}
 
-.pub{background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:20px;margin-bottom:14px}
-.pub p{margin:0 0 12px}
-
-/* hobbies: colored tiles */
-.tiles{grid-auto-flow:dense;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.tile{border-radius:12px;padding:22px;color:#fff;opacity:0;transform:translateX(-26px);transition:opacity .6s,transform .6s;overflow:hidden}
-.tile.in{opacity:1;transform:none}
-.tile .ic{font-size:2.4rem;display:inline-block;line-height:1;margin-bottom:8px}
-.tile h3{font-size:1.25rem}.tile p{margin:6px 0 0;font-size:1rem}
-.tile a{color:#fff}
-.t-lfc{background:#c8102e}.t-f1{background:#141c28}.t-ten{background:#b0461d}.t-film{background:#25303d}.t-mus{background:#3a2a52}
-.t-f1 .ic{transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}.t-f1:not(.in) .ic{transform:translateX(-120px)}
-.tile .chips span{background:#ffffff1f;border-color:#ffffff33}.tile .chips{margin-top:12px}
-
-.tile.wide{grid-column:span 2}
-.tile h4{font:700 .95rem var(--head);margin:18px 0 6px}
-.tile details{background:#00000033;border-color:#ffffff33;color:#fff;margin-top:14px}
-.tile .yrs{list-style:none;padding:0;margin:10px 0 0}.tile .yrs li{margin:6px 0;font-size:.95rem}
-.res{list-style:none;padding:0;margin:0}.res li{display:flex;gap:10px;align-items:center;padding:5px 0;border-bottom:1px solid #ffffff2a;font-size:.95rem}
-.res .b{flex:none;width:24px;height:24px;border-radius:50%;background:#fff;font:800 12px/24px var(--head);text-align:center}
-.res .W{color:#0a7a3b}.res .D{color:#4a5563}.res .L{color:#b00020}
-.res .dt{flex:none;width:52px;opacity:.8}.res .sc{margin-left:auto;font:700 .95rem var(--head)}
-.small{font-size:.85rem;opacity:.85;margin:8px 0 0}
-@media(max-width:620px){.tile.wide{grid-column:auto}}
-.honors{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.hn{background:var(--panel);border:1px solid var(--line);border-top:5px solid var(--accent);border-radius:10px;padding:18px}
-.hn .yr{display:inline-block;font:800 .85rem var(--head);color:var(--on-accent);background:var(--accent);border-radius:999px;padding:2px 12px;margin-bottom:10px}
-.hn p{margin:6px 0 0;font-size:.98rem;color:var(--mute)}
-.fl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
-.fl button{font:700 14px var(--head);background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:6px 14px;cursor:pointer}
-.fl button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
-.certs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.certs li{display:grid;grid-template-columns:84px 1fr auto;gap:16px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
-.certs li[hidden]{display:none}
-.certs h3{font-size:1.02rem;margin:0}
-.certs p{margin:3px 0 0;font-size:.92rem;color:var(--mute)}
-.certs .dt{font:700 .9rem var(--head);color:var(--accent);padding-top:2px}
-.certs .tg{font:700 12px var(--head);border:1px solid var(--line);border-radius:999px;padding:2px 10px;color:var(--mute)}
-@media(max-width:620px){.certs li{grid-template-columns:1fr;gap:4px}.certs .tg{justify-self:start}}
-.rv{opacity:0;transform:translateY(16px);transition:opacity .55s,transform .55s}.rv.in{opacity:1;transform:none}
-.hn{transition:opacity .55s,transform .55s,box-shadow .2s}.hn:hover{box-shadow:0 8px 24px #00000022}
-.hn .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.hn .em{font-size:2rem;line-height:1}.hn .yr{margin:0}
-.yg{margin-top:6px}.yg h4{font:800 1.3rem var(--head);margin:22px 0 4px;display:flex;align-items:center;gap:12px}
-.yg h4::after{content:"";flex:1;border-top:1px solid var(--line)}
-.fl .n{opacity:.7;margin-left:6px;font-weight:600}
-#top{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:35;width:44px;height:44px;border-radius:50%;border:0;background:var(--accent);color:var(--on-accent);font:800 20px var(--head);cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s;box-shadow:0 4px 14px #0004}
-#top.show{opacity:1;pointer-events:auto}
-/* looks: accent palettes (data-look) combined with light/dark (data-theme) */
-:root[data-look="blueprint"]{--accent:#0b66d6;--hero:#081a33;--head:'IBM Plex Mono',ui-monospace,monospace}
-:root[data-look="blueprint"][data-theme="dark"]{--accent:#4cc3ff;--on-accent:#06121f}
-:root[data-look="blueprint"] body{background-image:linear-gradient(color-mix(in srgb,var(--line) 55%,transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb,var(--line) 55%,transparent) 1px,transparent 1px);background-size:32px 32px}
-:root[data-look="blueprint"] h1{letter-spacing:-.02em}
-:root[data-look="forest"]{--accent:#1d7a4b;--hero:#0b1f18}
-:root[data-look="forest"][data-theme="dark"]{--accent:#4ade80;--on-accent:#06150d}
-:root[data-look="amber"]{--accent:#b45309;--hero:#1e1509}
-:root[data-look="amber"][data-theme="dark"]{--accent:#fbbf24;--on-accent:#1a1204}
-#looks{margin-left:auto;display:flex;gap:8px;align-items:center}
-#looks button{width:22px;height:22px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
-#looks button[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:2px}
-.contact{background:var(--ink);color:var(--bg);border-radius:14px;padding:36px;text-align:left}
-.contact h2{all:unset;display:block;font:800 2rem/1.1 var(--head);margin-bottom:8px}
-.contact p{margin:0 0 20px;opacity:.85}
-.contact .btn.alt{border-color:currentColor;color:inherit}
-footer{padding:28px 24px 56px;color:var(--mute);font-size:.9rem}
-
-@media(max-width:760px){.hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:56px;padding-bottom:64px}.hero .ph{width:150px;height:150px;order:-1}
-.sec{grid-template-columns:1fr;gap:18px}.sec>h2{position:static}.focus div{grid-template-columns:1fr;gap:4px}section{padding:44px 0}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{transition:none;opacity:1;transform:none}.tile,.step,.t-f1 .ic{transition:none;opacity:1;transform:none}.btn{transition:none}}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(max-width:640px){.hero .wrapper{grid-template-columns:1fr}.postcard{order:-1;width:130px}.exp,.honor{grid-template-columns:1fr}.certs li{grid-template-columns:1fr}
+details.row>summary{grid-template-columns:1fr 26px}details.row>summary .t{grid-column:1;grid-row:2}details.row>summary::after{grid-row:1;grid-column:2}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{transition:none;opacity:1;transform:none}.postcard{transition:none}}
 </style>
 </head>
 <body>
-<a class="skip" href="#about">Skip to content</a>
-<div id="track" aria-hidden="true">
-  <div id="fill"></div><div id="finish"></div>
-  <svg id="car" viewBox="0 0 48 24"><path d="M2 15 L10 14 L16 8 L26 8 L30 13 L42 13 L46 16 L46 18 L2 18Z" fill="#c8102e"/><rect x="0" y="9" width="6" height="3" fill="#fff"/><rect x="38" y="11" width="9" height="2" fill="#fff"/><circle cx="12" cy="18" r="4.5" fill="#111" stroke="#888"/><circle cx="37" cy="18" r="4.5" fill="#111" stroke="#888"/><path d="M18 8 L22 4 L25 8Z" fill="#222"/></svg>
-</div>
+<a class="skip" href="#work">Skip to content</a>
+<div id="track" aria-hidden="true"><div id="fill"></div><div id="finish"></div>
+<svg id="car" viewBox="0 0 48 24"><path d="M2 15 L10 14 L16 8 L26 8 L30 13 L42 13 L46 16 L46 18 L2 18Z" fill="#c8102e"/><rect x="0" y="9" width="6" height="3" fill="#fff"/><rect x="38" y="11" width="9" height="2" fill="#fff"/><circle cx="12" cy="18" r="4.5" fill="#111" stroke="#888"/><circle cx="37" cy="18" r="4.5" fill="#111" stroke="#888"/><path d="M18 8 L22 4 L25 8Z" fill="#222"/></svg></div>
 
-<div class="hero">
-  <canvas id="pores" aria-hidden="true"></canvas>
-  <div class="wrap">
-    <div>
-      <h1>Mohammad Azhar U Din Mir</h1>
-      <p class="role">Doctoral Research Scholar, Structural Engineering | IIT Mandi</p>
-      <p class="tag">I study how the internal structure of porous materials shapes their mechanical behavior, using X-ray tomography, constitutive modeling and finite element analysis.</p>
-      <div class="btns">
-        <a href="resume.pdf" class="btn" download>Download resume</a>
-        <a class="btn alt" href="mailto:d24102@students.iitmandi.ac.in">Email me</a>
-        <a class="btn alt" href="https://www.linkedin.com/in/mir-azhar-u-din-59765a240" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-      <p class="loc">Kupwara, Jammu &amp; Kashmir, India</p>
-    </div>
-    <img class="ph" src="profile.jpg" alt="Portrait of Mohammad Azhar U Din Mir" width="220" height="220">
-  </div>
-</div>
+<nav aria-label="Sections"><div class="col">
+<a href="#work">Work</a><a href="#experience">Experience</a><a href="#honors">Honors</a><a href="#life">Life</a><a href="#contact">Contact</a>
+<button id="theme" type="button" aria-label="Toggle dark mode">Dark</button></div></nav>
 
-<nav aria-label="Sections"><div class="wrap">
-  <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#honors">Honors</a><a href="#hobbies">Hobbies</a><a href="#contact">Contact</a>
-  <div id="looks" role="group" aria-label="Page style"><button type="button" data-look="blueprint" style="background:#0b66d6" aria-label="Blueprint style"></button><button type="button" data-look="crimson" style="background:#c8102e" aria-label="Crimson style"></button><button type="button" data-look="forest" style="background:#1d7a4b" aria-label="Forest style"></button><button type="button" data-look="amber" style="background:#b45309" aria-label="Amber style"></button></div>
-  <button id="theme" type="button" aria-label="Toggle dark mode">Dark mode</button>
-</div></nav>
+<header class="hero"><div class="col"><div class="wrapper">
+<div>
+<span class="mono">Doctoral research scholar · IIT Mandi</span>
+<h1>Mohammad Azhar U Din Mir</h1>
+<p class="role">Structural engineering · porous materials · XCT · FEA</p>
+<p class="story">I study what's <b>inside</b> materials. Since 2024 I've been a doctoral scholar at IIT Mandi, using <b>X-ray computed tomography</b> to look inside porous materials and building models that link their structure to how they behave under load. Before that I built a ship-hull test tank with Lamb-wave sensors at IIT Delhi, wrote design-automation code at IIT Bombay, and worked on railway track quadrupling sites with GMR. So far: <b>2 papers</b>, <b>3 IITs</b>, <b>10 PhD courses</b>, and 2 courses taught as a TA.</p>
+<div class="links"><a href="resume.pdf" download>Resume ↓</a><a href="mailto:d24102@students.iitmandi.ac.in">Email</a><a href="https://www.linkedin.com/in/mir-azhar-u-din-59765a240" target="_blank" rel="noopener">LinkedIn</a><span class="mono" style="letter-spacing:.04em;text-transform:none">Kupwara, J&amp;K, India</span></div>
+</div>
+<div class="postcard"><img src="profile.jpg" alt="Portrait of Mohammad Azhar U Din Mir" width="150" height="150"></div>
+</div></div></header>
 
 <main>
-<section id="about"><div class="wrap sec">
-  <h2>About</h2>
-  <div>
-    <p class="lede">I am a Doctoral Research Scholar in Structural Engineering at IIT Mandi.</p>
-    <p class="max">I have extensive experience in <strong>X-ray Computed Tomography (XCT)</strong> scanning and quantitative analysis of material microstructures, including specimen preparation, image acquisition, reconstruction, and post-processing. My broader expertise lies in solid and fracture mechanics and finite element analysis.</p>
-    <div class="stats">
-      <div class="stat"><b data-n="3">0</b><span>IITs worked at: Mandi, Delhi, Bombay</span></div>
-      <div class="stat"><b data-n="2">0</b><span>publications</span></div>
-      <div class="stat"><b data-n="10">0</b><span>PhD courses completed</span></div>
-      <div class="stat"><b data-n="2">0</b><span>courses assisted as TA</span></div>
-      <div class="stat"><b data-n="11">0</b><span>honors and certificates</span></div>
-    </div>
-  </div>
+<section id="work"><div class="col rv"><h2>Selected work</h2>
+<div class="rows">
+<details class="row"><summary><h3>Microstructure-informed modeling of porous materials</h3><span class="t">Research · 2024–</span></summary><div class="body"><p>My doctoral work connects what X-ray CT reveals inside a porous material to how it deforms and fails, through constitutive modeling and finite element analysis.</p><div class="chips"><span>XCT</span><span>Constitutive modeling</span><span>ABAQUS</span><span>Python</span></div></div></details>
+<details class="row"><summary><h3>Fabric-tensor characterization of foam concrete</h3><span class="t">Paper · 2025</span></summary><div class="body"><p>Mohammad Azhar U Din Mir, Rajneesh Sharma. <em>Microstructurally informed mechanical characterization of foam concrete using fabric tensor approach.</em> ICCMS 2025, IIT Bhubaneswar.</p></div></details>
+<details class="row"><summary><h3>Durability of seashell-filled GFRP composites</h3><span class="t">Paper · 2026</span></summary><div class="body"><p>Sahil, Mohammad Azhar U. Din Mir, Rajneesh Sharma, Sunny Zafar. <em>Hydrothermal Durability of Microwave-Processed Seashell-Filled GFRP Composites: Diffusion, Microstructure, and Mechanical Performance.</em> Polymer Composites.</p><p><a href="https://doi.org/10.1002/pc.71471" target="_blank" rel="noopener">Read the paper (DOI) →</a></p></div></details>
+<details class="row"><summary><h3>Guided-wave monitoring of ship hulls</h3><span class="t">Research · 2023–24</span></summary><div class="body"><ul><li>Designed and fabricated a test tank simulating ship hull environments under air and water loading.</li><li>Deployed PZT sensor networks for Lamb wave generation and acquisition.</li><li>Analyzed guided wave propagation to detect cracks and corrosion.</li></ul><p>IIT Delhi, as Junior Research Fellow.</p></div></details>
+<details class="row"><summary><h3>OSDag design module for steel built-up sections</h3><span class="t">Build · 2020</span></summary><div class="body"><p>Developed a computational module for OSDag under the FOSSEE project at IIT Bombay, automating structural design of steel built-up sections and implementing design-verification algorithms.</p></div></details>
+<details class="row"><summary><h3>Interactive tool for design of steel structures</h3><span class="t">Build · 2021</span></summary><div class="body"><p>An Excel–VBA tool for iterative code-based design that cut manual computation. It won the Innovative Project Award at AICONATHON 2021 (VIT Chennai), with INR 5000 and server hosting support.</p></div></details>
+</div></div></section>
+
+<section id="experience"><div class="col rv"><h2>Experience and education</h2>
+<div class="exp"><span class="y">2024 – now</span><div><h3>PhD, Structural Engineering</h3><p>IIT Mandi · CGPA 8.13 / 10</p></div></div>
+<div class="exp"><span class="y">2025</span><div><h3>Teaching Assistant</h3><p>Mechanics of Composite Materials (CE-617), Fall 2025 · Fundamentals of Fracture Mechanics (ME-506). Tutorials, problem sessions and grading.</p></div></div>
+<div class="exp"><span class="y">2023 – 24</span><div><h3>Junior Research Fellow</h3><p>IIT Delhi · ship hull structural health monitoring</p></div></div>
+<div class="exp"><span class="y">2021 – 22</span><div><h3>Graduate Engineer Trainee</h3><p>GMR Infrastructure Pvt. Ltd. · railway track quadrupling: site operations, quality control, safety compliance</p></div></div>
+<div class="exp"><span class="y">2020</span><div><h3>Junior Research Intern</h3><p>IIT Bombay · FOSSEE / OSDag</p></div></div>
+<div class="exp"><span class="y">2017 – 21</span><div><h3>B.Tech, Civil Engineering</h3><p>VIT Chennai · CGPA 8.65 / 10</p></div></div>
+<p class="pick"><span class="mono">Tools</span>&nbsp; Python, MATLAB, Fortran, ABAQUS, LaTeX, AutoCAD, MS Office</p>
+<details class="row" style="margin-top:18px;border-top:1px solid var(--line)"><summary><h3>PhD coursework</h3><span class="t">10 courses</span></summary><div class="body"><ul><li>Uncertainty Analysis in Civil Engineering (CE-516)</li><li>Fundamentals of Fracture Mechanics (ME-506)</li><li>High-Performance Scientific Computing (ME-522)</li><li>Mechanics of Composite Materials (CE-617)</li><li>Solid Mechanics in Structural Engineering (CE-557)</li><li>Numerical Methods for Engineering Computation (ME-504)</li><li>Applied Computational Fluid Dynamics (ME-615)</li><li>Research Methodology for Civil Engineering (CE-600*)</li><li>Selected Topics in Plasticity and Damage Mechanics (ME-591)</li><li>Consciousness and Professional Ethics (GE-502)</li></ul></div></details>
 </div></section>
 
-<section id="research"><div class="wrap sec">
-  <h2>Research</h2>
-  <div>
-    <p class="lede">Porous materials are only as good as their pores. My work connects what we can see inside a material to how it behaves under load.</p>
-    <div class="focus">
-      <div><h3>Solid and fracture mechanics</h3><p>Deformation, damage and failure in quasi-brittle materials.</p></div>
-      <div><h3>Microstructure–property relationships</h3><p>How pore structure in porous materials controls mechanical response.</p></div>
-      <div><h3>Multiscale constitutive modeling</h3><p>Material models informed by measured microstructure.</p></div>
-    </div>
-    <h3 style="margin:34px 0 4px">How the pieces fit together</h3>
-    <div class="flow">
-      <div class="step"><h3>Image</h3><p>X-ray CT reveals a specimen's internal structure without cutting it.</p></div>
-      <div class="step"><h3>Quantify</h3><p>Image analysis turns the structure into measurable descriptors.</p></div>
-      <div class="step"><h3>Model</h3><p>Those descriptors inform constitutive laws for the material.</p></div>
-      <div class="step"><h3>Simulate</h3><p>Finite element analysis predicts how the material and structures respond.</p></div>
-    </div>
-  </div>
+<section id="honors"><div class="col rv"><h2>Honors and certificates</h2>
+<div class="honor"><span class="y">2023</span><div><h3>GATE 2023: qualified</h3><p>Graduate Aptitude Test in Engineering, Civil Engineering.</p></div></div>
+<div class="honor"><span class="y">2021</span><div><h3>Innovative Project Award, AICONATHON 2021</h3><p>For an interactive tool for design of steel structures, School of Civil Engineering, VIT Chennai.</p></div></div>
+<div class="honor"><span class="y">2019–20</span><div><h3>Certificate of Appreciation, Enactus VIT Chennai</h3><p>Outstanding contribution to the student chapter as HR, Feb 2019 to Apr 2020.</p></div></div>
+<details class="row" style="margin-top:18px;border-top:1px solid var(--line)"><summary><h3>Certificates</h3><span class="t">8 listed</span></summary><div class="body"><ul class="certs">
+<li><span class="d">Oct 2026</span><span>be10X AI Tools &amp; Claude Workshop<small>Certificate of completion</small></span></li>
+<li><span class="d">Jul 2026</span><span>Computational Structural Engineering with MATLAB: Modelling, Analysis, and Automation<small>Webinar · IAStructE Student Chapter, BITS Pilani Hyderabad Campus</small></span></li>
+<li><span class="d">Dec 2020</span><span>Virtual Industry Conclave<small>School of Civil Engineering, VIT Chennai</small></span></li>
+<li><span class="d">Nov 2020</span><span>Virtual International Summit on Energy Efficient Buildings<small>School of Civil Engineering, VIT Chennai</small></span></li>
+<li><span class="d">Sep 2020</span><span>STTP: Challenges and Remedies in Various Fields of Civil Engineering Construction<small>21–26 Sep · VIT Chennai</small></span></li>
+<li><span class="d">Sep 2020</span><span>Webinar: Entrepreneurship Opportunities for Civil Engineers<small>By Er. Francis Suresh Balan · VIT Chennai webinar series</small></span></li>
+<li><span class="d">Jul 2020</span><span>Four-day webinar series: Modern Approaches to Bridge Engineering<small>1–4 Jul · VIT Chennai</small></span></li>
+<li><span class="d">Jun 2020</span><span>Entrepreneurship Development Program: Modern Construction Project Management<small>28–30 Jun · VIT Chennai</small></span></li></ul></div></details>
 </div></section>
 
-<section id="experience"><div class="wrap sec">
-  <h2>Experience and education</h2>
-  <div>
-    <div class="tl">
-      <div class="job"><h3>PhD, Structural Engineering: IIT Mandi</h3><p class="meta">2024 – present · CGPA 8.13 / 10</p></div>
-      <div class="job"><h3>Teaching Assistant: IIT Mandi</h3><p class="meta">Mechanics of Composite Materials (CE-617), Fall 2025 · Fundamentals of Fracture Mechanics (ME-506)</p>
-        <ul><li>Tutorials, problem-solving sessions, and evaluation of assignments, quizzes and exams.</li></ul></div>
-      <div class="job"><h3>Junior Research Fellow: IIT Delhi</h3><p class="meta">2023 – 2024</p>
-        <ul><li>Designed and fabricated a test tank simulating ship hull environments under air and water loading.</li>
-        <li>Deployed PZT sensor networks for Lamb wave generation and acquisition.</li>
-        <li>Analyzed guided wave propagation to detect cracks and corrosion in ship hull structures.</li></ul></div>
-      <div class="job"><h3>Graduate Engineer Trainee: GMR Infrastructure Pvt. Ltd.</h3><p class="meta">2021 – 2022</p>
-        <ul><li>Managed site operations for railway track quadrupling projects.</li>
-        <li>Ensured quality control, safety compliance, and adherence to engineering drawings.</li></ul></div>
-      <div class="job"><h3>Junior Research Intern: IIT Bombay</h3><p class="meta">2020 · FOSSEE project</p>
-        <ul><li>Developed a computational module for OSDag that automates design of steel built-up sections.</li>
-        <li>Implemented algorithms for structural design verification.</li></ul></div>
-      <div class="job"><h3>B.Tech, Civil Engineering: VIT Chennai</h3><p class="meta">2017 – 2021 · CGPA 8.65 / 10</p>
-        <ul><li><strong>Innovative Project Award, AICONATHON 2021</strong> for an interactive tool for design of steel structures (INR 5000 and server hosting support).</li>
-        <li>Projects: structural health monitoring for bridge safety (2019); Excel–VBA steel design tool (2021).</li></ul></div>
-    </div>
-    <h3>Skills</h3>
-    <div class="chips" style="margin-top:8px"><span>Python</span><span>MATLAB</span><span>Fortran</span><span>ABAQUS</span><span>LaTeX</span><span>AutoCAD</span><span>MS Office</span></div>
-    <details><summary>PhD coursework (10 courses)</summary><ul>
-      <li>Uncertainty Analysis in Civil Engineering (CE-516)</li><li>Fundamentals of Fracture Mechanics (ME-506)</li><li>High-Performance Scientific Computing (ME-522)</li><li>Mechanics of Composite Materials (CE-617)</li><li>Solid Mechanics in Structural Engineering (CE-557)</li><li>Numerical Methods for Engineering Computation (ME-504)</li><li>Applied Computational Fluid Dynamics (ME-615)</li><li>Research Methodology for Civil Engineering (CE-600*)</li><li>Selected Topics in Plasticity and Damage Mechanics (ME-591)</li><li>Consciousness and Professional Ethics (GE-502)</li></ul></details>
-  </div>
-</div></section>
+<section id="life"><div class="col rv"><h2>Off the clock</h2>
+<div class="rows">
+<div class="lrow"><h3>Liverpool FC</h3><span class="t">Football</span><p>Lifelong supporter of Liverpool FC, the greatest club in English football history.</p></div>
+<div class="lrow"><h3>Max Verstappen</h3><span class="t">Formula 1</span><p>Fan of Max Verstappen, the greatest driver of all time.</p></div>
+<div class="lrow"><h3>Rafael Nadal</h3><span class="t">Tennis</span><p>My all-time favorite player.</p></div>
+<div class="lrow"><h3>Film</h3><span class="t">Letterboxd</span><p>I keep track of what I watch on <a href="https://boxd.it/2wOWH" target="_blank" rel="noopener">Letterboxd (@mir_soub)</a>.</p></div>
+<div class="lrow"><h3>Music</h3><span class="t">Apple Music</span><p>I like discovering artists and genres, and albums worth returning to. <a href="https://music.apple.com/profile/mirazharudin64" target="_blank" rel="noopener">My Apple Music profile →</a></p></div>
+</div></div></section>
 
-<section id="publications"><div class="wrap sec">
-  <h2>Publications</h2>
-  <div>
-    <div class="pub"><p>Sahil, Mohammad Azhar U. Din Mir, Rajneesh Sharma, Sunny Zafar (2026). <em>Hydrothermal Durability of Microwave-Processed Seashell-Filled GFRP Composites: Diffusion, Microstructure, and Mechanical Performance.</em> Polymer Composites.</p>
-      <a class="btn sm" href="https://doi.org/10.1002/pc.71471" target="_blank" rel="noopener">View paper (DOI)</a></div>
-    <div class="pub"><p>Mohammad Azhar U Din Mir, Rajneesh Sharma (2025). <em>Microstructurally informed mechanical characterization of foam concrete using fabric tensor approach.</em> ICCMS 2025, IIT Bhubaneswar.</p></div>
-  </div>
-</div></section>
-
-<section id="honors"><div class="wrap sec">
-  <h2>Honors and certificates</h2>
-  <div>
-    <div class="honors">
-      <div class="hn rv"><div class="top"><span class="em">🏅</span><span class="yr">2023</span></div><h3>GATE 2023: Qualified</h3><p>Graduate Aptitude Test in Engineering, Civil Engineering.</p></div>
-      <div class="hn rv"><div class="top"><span class="em">🏆</span><span class="yr">2021</span></div><h3>Innovative Project Award, AICONATHON 2021</h3><p>For <em>Development of Interactive Tool for Design of Steel Structures</em>, School of Civil Engineering, VIT Chennai (7–8 May 2021). Prize: INR 5000 and server hosting support from the industry partner.</p></div>
-      <div class="hn rv"><div class="top"><span class="em">🤝</span><span class="yr">2019–20</span></div><h3>Certificate of Appreciation, Enactus VIT Chennai</h3><p>For outstanding contribution to the student chapter as HR, February 2019 to April 2020.</p></div>
-    </div>
-    <h3 style="margin:34px 0 10px">Certificates</h3>
-    <div class="fl" id="fl" role="group" aria-label="Filter certificates"><button type="button" data-f="all" aria-pressed="true">All</button><button type="button" data-f="Workshop">Workshops</button><button type="button" data-f="Webinar">Webinars</button><button type="button" data-f="Conference">Conferences</button><button type="button" data-f="Training">Training</button></div>
-    <div id="certs"><div class="yg rv"><h4>2026</h4><ul class="certs">
-<li data-t="Workshop"><span class="dt">Oct 2026</span><div><h3>be10X AI Tools &amp; Claude Workshop</h3><p>Certificate of completion · be10X</p></div><span class="tg">Workshop</span></li>
-<li data-t="Webinar"><span class="dt">Jul 2026</span><div><h3>Computational Structural Engineering with MATLAB: Modelling, Analysis, and Automation</h3><p>Webinar, 25 Jul 2026 · IAStructE Student Chapter, BITS Pilani Hyderabad Campus</p></div><span class="tg">Webinar</span></li>
-</ul></div><div class="yg rv"><h4>2020</h4><ul class="certs">
-<li data-t="Conference"><span class="dt">Dec 2020</span><div><h3>Virtual Industry Conclave</h3><p>18 Dec 2020 · School of Civil Engineering, VIT Chennai</p></div><span class="tg">Conference</span></li>
-<li data-t="Conference"><span class="dt">Nov 2020</span><div><h3>Virtual International Summit on Energy Efficient Buildings</h3><p>21 Nov 2020 · School of Civil Engineering, VIT Chennai</p></div><span class="tg">Conference</span></li>
-<li data-t="Training"><span class="dt">Sep 2020</span><div><h3>Short Term Training Program: Challenges and Remedies in Various Fields of Civil Engineering Construction</h3><p>21–26 Sep 2020 · School of Civil Engineering, VIT Chennai</p></div><span class="tg">Training</span></li>
-<li data-t="Webinar"><span class="dt">Sep 2020</span><div><h3>Webinar: Entrepreneurship Opportunities for Civil Engineers</h3><p>10 Sep 2020 · by Er. Francis Suresh Balan (CGS Green Sustainergy). Part of the International Webinar Series on Significance and Prospects of Civil Engineering, VIT Chennai</p></div><span class="tg">Webinar</span></li>
-<li data-t="Webinar"><span class="dt">Jul 2020</span><div><h3>Four-day webinar series: Modern Approaches to Bridge Engineering</h3><p>1–4 Jul 2020 · VIT Chennai</p></div><span class="tg">Webinar</span></li>
-<li data-t="Training"><span class="dt">Jun 2020</span><div><h3>Entrepreneurship Development Program on Modern Construction Project Management</h3><p>28–30 Jun 2020 · VIT Chennai</p></div><span class="tg">Training</span></li>
-</ul></div></div>
-  </div>
-</div></section>
-
-<section id="hobbies"><div class="wrap sec">
-  <h2>Off the clock</h2>
-  <div class="tiles">
-    <div class="tile t-lfc wide"><span class="ic">⚽</span><h3>Liverpool FC</h3><p>Passionate follower of English football and a lifelong supporter of Liverpool FC, the greatest club in English football history. <strong>52 major honours</strong> and counting.</p>
-<div class="chips"><span>20 League titles</span><span>6 European Cups</span><span>8 FA Cups</span><span>10 League Cups</span><span>3 UEFA Cups</span><span>4 Super Cups</span><span>1 Club World Cup</span></div>
-<details><summary>Every major title, by year</summary><ul class="yrs">
-<li><b>League (20):</b> 1900-01, 1905-06, 1921-22, 1922-23, 1946-47, 1963-64, 1965-66, 1972-73, 1975-76, 1976-77, 1978-79, 1979-80, 1981-82, 1982-83, 1983-84, 1985-86, 1987-88, 1989-90, 2019-20, 2024-25</li>
-<li><b>European Cup / Champions League (6):</b> 1977, 1978, 1981, 1984, 2005, 2019</li>
-<li><b>FA Cup (8):</b> 1965, 1974, 1986, 1989, 1992, 2001, 2006, 2022</li>
-<li><b>League Cup (10):</b> 1981, 1982, 1983, 1984, 1995, 2001, 2003, 2012, 2022, 2024</li>
-<li><b>UEFA Cup (3):</b> 1973, 1976, 2001</li>
-<li><b>UEFA Super Cup (4):</b> 1977, 2001, 2005, 2019</li>
-<li><b>FIFA Club World Cup (1):</b> 2019</li></ul></details>
-<h4>Latest result</h4><ul class="res" id="lfc"></ul><p class="small" id="lfcnext"></p></div>
-    <div class="tile t-f1 wide"><span class="ic">🏎️</span><h3>Max Verstappen</h3><p>Motorsport enthusiast and a fan of Max Verstappen, the greatest driver of all time. Four straight world titles with Red Bull.</p>
-<div class="chips" id="vchips"><span>4 World Championships</span><span>71 race wins</span><span>48 pole positions</span></div>
-<details><summary>Championship years</summary><ul class="yrs">
-<li id="vtitles"><b>Formula 1 World Drivers' Champion (4):</b> 2021, 2022, 2023, 2024</li>
-</ul></details></div>
-    <div class="tile t-ten wide"><span class="ic">🎾</span><h3>Rafael Nadal</h3><p>A long-time follower of professional tennis, with Rafael Nadal as my all-time favorite. <strong>92 singles titles</strong> across a career that ended in 2024.</p>
-<div class="chips"><span>22 Grand Slams</span><span>14 French Opens</span><span>36 Masters 1000</span><span>2 Olympic golds</span><span>4 Davis Cups</span></div>
-<details><summary>Every major title, by year</summary><ul class="yrs">
-<li><b>French Open (14):</b> 2005, 2006, 2007, 2008, 2010, 2011, 2012, 2013, 2014, 2017, 2018, 2019, 2020, 2022</li>
-<li><b>US Open (4):</b> 2010, 2013, 2017, 2019</li>
-<li><b>Australian Open (2):</b> 2009, 2022</li>
-<li><b>Wimbledon (2):</b> 2008, 2010</li>
-<li><b>Olympics:</b> singles gold 2008 (Beijing), doubles gold 2016 (Rio)</li>
-<li><b>Davis Cup with Spain (4):</b> 2004, 2009, 2011, 2019</li>
-<li><b>Career totals:</b> 92 ATP singles titles including 36 Masters 1000 titles</li></ul></details></div>
-    <div class="tile t-film"><span class="ic">🎬</span><h3>Film</h3><p>I explore cinema and track what I watch on <a href="https://boxd.it/2wOWH" target="_blank" rel="noopener noreferrer">Letterboxd (@mir_soub)</a>.</p><p class="lbl">Favorites</p><div class="chips" id="films"></div><p class="lbl">Recently watched</p><div class="chips" id="recent"></div></div>
-    <div class="tile t-mus"><span class="ic">🎧</span><h3>Music</h3><p>I enjoy discovering artists and genres, and finding albums worth returning to. See what I'm listening to on <a href="https://music.apple.com/profile/mirazharudin64" target="_blank" rel="noopener noreferrer">Apple Music</a>.</p><div class="chips" id="music"></div></div>
-  </div>
-</div></section>
-
-<section id="contact" style="border:0"><div class="wrap">
-  <div class="contact">
-    <h2>Let's talk</h2>
-    <p>Interested in porous materials, tomography or computational mechanics? I'm happy to hear from collaborators and fellow researchers.</p>
-    <div class="btns"><a class="btn" href="mailto:d24102@students.iitmandi.ac.in">d24102@students.iitmandi.ac.in</a><a class="btn alt" href="https://www.linkedin.com/in/mir-azhar-u-din-59765a240" target="_blank" rel="noopener">LinkedIn</a></div>
-  </div>
-</div></section>
+<section id="contact"><div class="col rv contact"><h2>Let's talk about what's inside things.</h2>
+<p class="links" style="font-size:1rem"><a href="mailto:d24102@students.iitmandi.ac.in">d24102@students.iitmandi.ac.in</a><a href="https://www.linkedin.com/in/mir-azhar-u-din-59765a240" target="_blank" rel="noopener">LinkedIn</a><a href="resume.pdf" download>Resume</a></p></div></section>
 </main>
-<button id="top" type="button" aria-label="Back to top">↑</button>
-<footer><div class="wrap">© 2026 Mohammad Azhar U Din Mir</div></footer>
+<footer><div class="col">© 2026 Mohammad Azhar U Din Mir</div></footer>
 
 <script>
-const FILMS=["Dunkirk (2017)","Naked (1993)","Mirror (1975)","Past Lives (2023)"];  // Letterboxd favorites
-const RECENT=["I Swear (2025)","Hostiles (2017)","Cape Fear (1991)","How to Make a Killing (2026)"];  // recently watched, update occasionally
-const MUSIC=[];  // e.g. ["Album, Artist"]
-const LFC=[ // latest completed match. Update after each game. h/a = home/away team, hs/as = goals
-{d:"20 Sep",h:"Bournemouth",a:"Liverpool",hs:0,as:1}];
-function renderLFC(){const ul=document.getElementById('lfc');if(!ul)return;
-LFC.forEach(m=>{const home=m.h==="Liverpool",f=home?m.hs:m.as,g=home?m.as:m.hs,r=f>g?'W':f<g?'L':'D';
-const li=document.createElement('li');
-li.innerHTML='<span class="b '+r+'">'+r+'</span><span class="dt">'+m.d+'</span><span>'+m.h+' v '+m.a+'</span><span class="sc">'+m.hs+'-'+m.as+'</span>';ul.appendChild(li)});
-document.getElementById('lfcnext').textContent="Latest completed Premier League match, as of 11 Oct 2026.";}
-renderLFC();
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 /* F1 progress */
 const car=document.getElementById('car'),fill=document.getElementById('fill'),track=document.getElementById('track');
-function progress(){const h=document.documentElement,max=h.scrollHeight-h.clientHeight,p=max>0?Math.min(1,h.scrollTop/max):0,x=p*(track.clientWidth-82);car.style.transform='translateX('+x+'px)';fill.style.width=(x+48)+'px'}
+function progress(){const h=document.documentElement,max=h.scrollHeight-h.clientHeight,p=max>0?Math.min(1,h.scrollTop/max):0,x=p*(track.clientWidth-74);car.style.transform='translateX('+x+'px)';fill.style.width=(x+44)+'px'}
 addEventListener('scroll',progress,{passive:true});addEventListener('resize',progress);progress();
 
-/* reveals */
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.25});
-document.querySelectorAll('.tile,.step,.rv').forEach((el,i)=>{el.style.transitionDelay=((i%5)*90)+'ms';io.observe(el)});
-const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);const n=+e.target.dataset.n,t0=performance.now();
-(function s(t){const k=reduce?1:Math.min(1,(t-t0)/900);e.target.textContent=Math.round(n*k);if(k<1)requestAnimationFrame(s)})(t0)}),{threshold:.6});
-document.querySelectorAll('[data-n]').forEach(el=>cio.observe(el));
-function chips(id,l){const b=document.getElementById(id);l.forEach(t=>{const s=document.createElement('span');s.textContent=t;b.appendChild(s)})}
-chips('films',FILMS);chips('recent',RECENT);chips('music',MUSIC);
-document.querySelectorAll('.lbl').forEach(l=>{l.style.cssText='font:700 .85rem var(--head);margin:14px 0 0;opacity:.8'});
-
-/* hero: drifting pore network, like a CT slice; pores shy away from the cursor */
-(function(){
-  const cv=document.getElementById('pores'),ctx=cv.getContext('2d'),hero=cv.parentElement;
-  let w,h,dpr,P=[],m={x:-999,y:-999},run=true;
-  function size(){dpr=Math.min(2,devicePixelRatio||1);w=hero.clientWidth;h=hero.clientHeight;cv.width=w*dpr;cv.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
-    const n=Math.round(w*h/9000);P=[];for(let i=0;i<n;i++){const r=4+Math.pow(Math.random(),2.2)*46;P.push({x:Math.random()*w,y:Math.random()*h,r,vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,f:Math.random()<.12})}}
-  function draw(){
-    ctx.clearRect(0,0,w,h);
-    for(const p of P){
-      if(!reduce){p.x+=p.vx;p.y+=p.vy;const dx=p.x-m.x,dy=p.y-m.y,d=Math.hypot(dx,dy),R=p.r+110;if(d<R&&d>0){p.x+=dx/d*(R-d)*.03;p.y+=dy/d*(R-d)*.03}
-        if(p.x<-p.r)p.x=w+p.r;if(p.x>w+p.r)p.x=-p.r;if(p.y<-p.r)p.y=h+p.r;if(p.y>h+p.r)p.y=-p.r}
-      ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.283);
-      if(p.f){ctx.save();ctx.globalAlpha=.16;ctx.fillStyle=window.__acc||'#0b66d6';ctx.fill();ctx.restore()}
-      ctx.strokeStyle='rgba(190,205,222,'+(p.r>20?.16:.1)+')';ctx.lineWidth=1.2;ctx.stroke();
-    }
-    if(run&&!reduce)requestAnimationFrame(draw);
-  }
-  hero.addEventListener('pointermove',e=>{const b=hero.getBoundingClientRect();m.x=e.clientX-b.left;m.y=e.clientY-b.top});
-  hero.addEventListener('pointerleave',()=>{m.x=m.y=-999});
-  new IntersectionObserver(es=>{const v=es[0].isIntersecting;if(v&&!run){run=true;draw()}run=v}).observe(hero);
-  addEventListener('resize',()=>{size();if(reduce)draw()});size();draw();
-})();
-
-
-/* live data: fetched in the visitor's browser, no extra files. Falls back to the values above if a source is down. */
-const refill=(id,l)=>{const b=document.getElementById(id);b.textContent='';chips(id,l)};
-const J=u=>fetch(u).then(r=>{if(!r.ok)throw 0;return r.json()});
-// Recent films: Letterboxd RSS via a public CORS proxy
-fetch('https://api.allorigins.win/raw?url='+encodeURIComponent('https://letterboxd.com/azharudin/rss/')).then(r=>r.text()).then(t=>{
-  const x=new DOMParser().parseFromString(t,'text/xml'),NS='https://letterboxd.com',out=[];
-  x.querySelectorAll('item').forEach(i=>{const n=i.getElementsByTagNameNS(NS,'filmTitle')[0],y=i.getElementsByTagNameNS(NS,'filmYear')[0];
-    if(n&&y&&out.length<4)out.push(n.textContent+' ('+y.textContent+')')});
-  if(out.length)refill('recent',out)}).catch(()=>{});
-// Liverpool latest result: TheSportsDB (free public key)
-J('https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id=133602').then(d=>{
-  const m=(d.results||[]).filter(e=>e.intHomeScore!==null&&e.intAwayScore!==null).sort((p,q)=>q.dateEvent.localeCompare(p.dateEvent))[0];
-  if(!m)return;const dt=new Date(m.dateEvent+'T12:00:00');
-  LFC.length=0;LFC.push({d:dt.getDate()+' '+dt.toLocaleString('en-GB',{month:'short'}),h:m.strHomeTeam,a:m.strAwayTeam,hs:+m.intHomeScore,as:+m.intAwayScore});
-  document.getElementById('lfc').textContent='';renderLFC();
-  document.getElementById('lfcnext').textContent='Latest completed match, updated automatically.'}).catch(()=>{});
-// Verstappen: Jolpica F1 API
-(function(){const B='https://api.jolpi.ca/ergast/f1/drivers/max_verstappen',now=new Date();
-  Promise.all([J(B+'/driverStandings/1.json?limit=100'),J(B+'/results/1.json?limit=1'),J(B+'/qualifying/1.json?limit=1')]).then(([s,w,p])=>{
-    const t=s.MRData.StandingsTable.StandingsLists.map(l=>+l.season).filter(y=>y<now.getFullYear()||now.getMonth()===11).sort();
-    if(!t.length)return;
-    refill('vchips',[t.length+' World Championships',w.MRData.total+' race wins',p.MRData.total+' pole positions']);
-    document.getElementById('vtitles').innerHTML="<b>Formula 1 World Drivers' Champion ("+t.length+"):</b> "+t.join(', ')}).catch(()=>{})})();
-
-/* certificate filter */
-const cl=[...document.querySelectorAll('#certs li')];
-document.querySelectorAll('#fl button').forEach(b=>{
-  const f=b.dataset.f,c=f==='all'?cl.length:cl.filter(l=>l.dataset.t===f).length;
-  b.insertAdjacentHTML('beforeend','<span class="n">'+c+'</span>');
-  b.onclick=()=>{
-    document.querySelectorAll('#fl button').forEach(x=>x.setAttribute('aria-pressed',x===b));
-    cl.forEach(li=>li.hidden=f!=='all'&&li.dataset.t!==f);
-    document.querySelectorAll('.yg').forEach(g=>g.hidden=![...g.querySelectorAll('li')].some(li=>!li.hidden))}});
-/* back to top */
-const topb=document.getElementById('top');
-addEventListener('scroll',()=>topb.classList.toggle('show',scrollY>700),{passive:true});
-topb.onclick=()=>scrollTo({top:0});
-
-/* nav highlight */
+/* reveal + nav */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 const links=[...document.querySelectorAll('nav a')];
 const sio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
 document.querySelectorAll('main section').forEach(s=>sio.observe(s));
 
 /* theme */
 const root=document.documentElement,tb=document.getElementById('theme');
-function setTheme(t){root.dataset.theme=t;tb.textContent=t==='dark'?'Light mode':'Dark mode'}
+function setTheme(t){root.dataset.theme=t;tb.textContent=t==='dark'?'Light':'Dark'}
 let saved=null;try{saved=localStorage.getItem('theme')}catch(e){}
 setTheme(saved||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'));
 tb.onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';setTheme(t);try{localStorage.setItem('theme',t)}catch(e){}};
-/* look (accent palette) */
-const LOOKS=['blueprint','crimson','forest','amber'];
-function setLook(l){if(!LOOKS.includes(l))l='blueprint';root.dataset.look=l;
-  document.querySelectorAll('#looks button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.look===l));
-  window.__acc=getComputedStyle(root).getPropertyValue('--accent').trim()}
-document.querySelectorAll('#looks button').forEach(b=>b.onclick=()=>{setLook(b.dataset.look);try{localStorage.setItem('look',b.dataset.look)}catch(e){}});
-let sl=null;try{sl=localStorage.getItem('look')}catch(e){}
-setLook(sl||'blueprint');
-tb.addEventListener('click',()=>setLook(root.dataset.look));
+
 </script>
 </body>
 </html>
